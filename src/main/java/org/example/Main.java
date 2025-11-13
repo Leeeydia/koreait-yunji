@@ -1,38 +1,150 @@
-package org.example;
+// 문제 1 : 1부터 5까지 출력해주세요.
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-// 문제 : 할인 대상인지 아닌지 출력해주세요.
-// 조건 : 나이가 19세 이하이거나 60세 이상이면 할인 대상입니다.
-// 조건 : 출력예시 처럼 출력되어야 합니다.
-// 조건 : `구현시작` 부분만 수정 할 수 있습니다.
-// 조건 : 4가지 이상의 방법으로 풀어야 합니다.
-// 조건 : 그 중 2가지 방법은 `&&, ||`없이 풀어야 합니다.
+//class Main {
+//    public static void main(String[] args) {
+//        int i=0;
+//     while(i<=5){
+//         i++;
+//                 System.out.println("i="+i);
+//
+//     }
+//    }
+//}
 
-class Main {
+// 문제 2 : -100부터 25까지 출력해주세요.
+
+//class Main {
+//    public static void main(String[] args) {
+//        int i= -100;
+//        while(i<=25){
+//            i++;
+//            System.out.println("i="+i);
+//        }
+//    }
+//}
+
+// 문제3 구구단 8단을 출력해주세요 1000부터 1까지 곱해주세요
+
+
+//class Main {
+//    public static void main(String[] args) {
+//        int dan = 8;
+//
+//        int i = 1001;
+//
+//        while(i>=1){
+//            i--;
+//            System.out.println(
+//                    dan+"*"+i+"="+dan*i
+//            );
+//        }
+//
+//    }
+//}
+
+// 문제 4 : 아래와 같이 출력해주세요.
+// 문제 : 단을 `* 1000`부터 `* -500`까지 출력해주세요.
+
+//class Main {
+//    public static void main(String[] args) {
+//        int dan = 8;
+//
+//        int i = 1001;
+//
+//        while(i>-500){
+//            i--;
+//            System.out.println(dan+"*"+i+"="+dan*i);
+//        }
+//
+//
+//    /*
+//    8 * 1000 = 8000
+//    ...
+//    8 * -500 = -4000
+//    */
+//    }
+//}
+
+//문제 5 1부터5까지의 합 구하기
+
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        int a = 0;
+//        int b = 1;
+//
+//        while (b <= 5) {
+//            a = a + b;
+//            b++;
+//        }
+//
+//        System.out.println("합계: " + a);
+//    }
+//}
+
+//문제 6 -100부터 25까지의 합 구하기
+
+public class Main {
     public static void main(String[] args) {
-        int age = 43; // 이 값을 바꿔가면서 실행해보세요.
+       int a=0;
+       int b=-100;
 
-        System.out.println("당신의 나이는 " + age + "살 입니다.");
-
-        // 구현시작
-        // || 사용 (둘 중 하나라도 참이면 참)
-        if(age<=19 || age >=60){
-            System.out.println("할인대상입니다.");
-        }else{
-            System.out.println("할인대상이 아닙니다.");
-        }
-        // && 사용 (둘 다 참이어야 함, 둘 다 참인 할인대상 아닌 것의 ! 사용)
-        if(!(age>19&& age<60)){
-            System.out.println(("할인대상입니다"));
-        }else{
-            System.out.println(("할인대상이 아닙니다."));
-        }
-
-        if((age-19)*(age-60)>=0){
-            System.out.println(("할인대상입니다"));
-        }else{System.out.println(("할인대상이 아닙니다."));
-        }
-
+       while(b<=25){
+           a=a+b;
+           b++;
+       }
+       System.out.println(("합계:"+a));
     }
 }
+
+// 문제 7 : 1부터 3까지 출력하는 작업을 10번 해주세요.
+// 조건 : 2중 while문 사용
+
+//class Main {
+//    public static void main(String[] args) {
+//        int i=1;
+//        while(i<=10){
+//            int j=1;
+//            System.out.println(j);
+//            while(j<3){
+//                j++;
+//                System.out.println(j);
+//            }
+//            i++;
+//            }
+//        }
+//
+//
+//
+//        // 출력
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//        // 1
+//        // 2
+//        // 3
+//    }
